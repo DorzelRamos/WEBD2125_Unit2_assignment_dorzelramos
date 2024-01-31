@@ -6,11 +6,87 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@font-face {
+  font-family: lemon-milk;
+  src: url("../font/LEMONMILK-Bold.otf");
+}
+@font-face {
+  font-family: nasalization;
+  src: url("../font/nasalization-rg.otf");
+}
+@font-face {
+  font-family: pacifico;
+  src: url("../font/Pacifico-Regular.ttf");
+}
+@font-face {
+  font-family: pirulen;
+  src: url("../font/pirulen rg.ttf");
+}
 body {
-  background-color: #2B0157;
-  color: white;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  width: 100%;
+  height: 100vh;
+  padding: 3em;
 }
 
+#search-area {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #120148;
+  color: #fff;
+  padding: 10px;
+  width: 30%;
+  border-radius: 10px;
+}
+
+#search-area label {
+  font: bold 1.3em nasalization;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+#search-area p {
+  margin: 0;
+  line-height: 3em;
+  font-family: lemon-milk;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+#search-area input {
+  width: 100%;
+  text-align: center;
+}
+
+#container {
+  font-family: "Spartan", sans-serif;
+  width: 100%;
+  margin: 1em auto;
+  border: 1px #120148;
+}
 #container img {
-  width: 100px;
+  width: 50;
+  height: 50vh;
+}
+
+#container li, ul {
+  width: 100%;
+  list-style: none;
+  padding: 1em 5em;
+  padding-bottom: 10px;
+}
+
+#container h2 {
+  font-family: nasalization;
+  font-size: 5em;
+  color: #fff;
+}
+
+#container p {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.3em;
+  color: #fff;
+  background-color: #120148;
+  padding: 1em;
 }/*# sourceMappingURL=style.css.map */

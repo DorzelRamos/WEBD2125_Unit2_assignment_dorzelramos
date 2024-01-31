@@ -7,13 +7,116 @@
     font-family:'Montserrat', sans-serif;
 }
 
+// //////////////////////////////color stuff
+// background-color: #FF3CAC;
+// background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+$purple: #784BA0;
+$pink: #FF3CAC;
+$blue: #2B86C5;
+$reallyDarkPurple:#120148;
+$white: #fff;
+
+$gradientBackround: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+// ////////////////////////////////////font stuff
+@font-face {
+    font-family: lemon-milk;
+    src: url("../font/LEMONMILK-Bold.otf");
+  }
+  @font-face {
+    font-family: nasalization;
+    src: url("../font/nasalization-rg.otf");
+  }
+  @font-face {
+    font-family: pacifico;
+    src: url("../font/Pacifico-Regular.ttf");
+  }
+  @font-face {
+    font-family: pirulen;
+    src: url("../font/pirulen\ rg.ttf");
+  }
+
+$Roboto: "Roboto", sans-serif;
+$Rubik: "Rubik", sans-serif;
+$Spartan: "Spartan", sans-serif;
+
+$Pirulen: pirulen;
+$LemonMilk: lemon-milk;
+$Nasa: nasalization;
+$Pacifico: pacifico;
+// ////////////////////////////////////////////////////////
+
+// /////////////////body images starts here
 body {
-    background-color: #2B0157;
-    color: white;
+    // background-color: #2B0157;
+    // color: white;
+    background-image: $gradientBackround;
+    width: 100%;
+    height: 100vh;
+    padding: 3em;
 }
 
+// /////////////////////search area starts here
+#search-area {
+    margin: 0 auto;
+    text-align: center;
+    background-color: $reallyDarkPurple;
+    color: $white;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+#search-area label {
+    font: bold 1.3em $Nasa;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: $white;
+}
+#search-area p {
+    margin: 0;
+    line-height: 3em;
+    font-family: $LemonMilk;
+    padding-bottom: 10px;
+    color: $white;
+}
+#search-area input {
+    width: 100%;
+    text-align: center;
+}
+
+// //////////////////////////////container content starts here
 #container {
+    font-family: $Spartan;
+    width: 100%;
+    margin: 1em auto;
+    border: 1px  $reallyDarkPurple;
     img {
-        width: 100px;
+        width: 50;
+        height: 50vh;
+        
     }
+}
+
+#container li, ul {
+    width: 100%;
+    list-style: none;
+    padding: 1em 5em;
+    padding-bottom: 10px;
+
+}
+
+#container h2 {
+    font-family: $Nasa;
+    font-size: 5em;
+    color: $white;
+}
+
+#container p {
+    font-family: $Spartan;
+    font-size: 1.3em;
+    color: $white;
+    background-color: $reallyDarkPurple;
+    padding: 1em;
 }
