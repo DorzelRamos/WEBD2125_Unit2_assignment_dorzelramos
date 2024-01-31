@@ -9,6 +9,13 @@
     request.open('GET', 'data.json');
     request.onreadystatechange = function() {
         if ((request.readyState===4) && (request.status===200)) {
+          var items = JSON.parse(request.responseText);
+          var output = '<ul>';
+          for (var key in items) {
+            output += '<li>' + items[key].name + '</li>';
+          }
+          output += '</ul>';
+          document.getElementById('container').innerHTML = output;
             // var modify = document.getElementsByTagName('ul')
             // [1].getElementsByTagName('li');
             // var modify = document.getElementsByTagName('li')
@@ -35,10 +42,7 @@
             // for (var i = 0; i < modify.length; i++) {
             //     modify[i].innerHTML = request.responseText
             // }
-
-            var items = JSON.parse(request.responseText);
-            console.log(items);
-            // stopped at 1:29 of the JSON reading video
+            
         }
     }
     request.send();
